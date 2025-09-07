@@ -88,7 +88,7 @@ redis-server
 Start Celery worker:
 
 ```bash
-celery -A config worker -l info
+celery -A config worker -l info -P eventlet
 ```
 
 ---
@@ -104,7 +104,7 @@ python manage.py runserver
 Run Celery worker (in another terminal):
 
 ```bash
-celery -A config worker -l info
+celery -A config worker -l info -P eventlet
 ```
 
 Now your backend is ready 🚀
